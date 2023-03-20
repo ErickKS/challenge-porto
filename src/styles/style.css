@@ -1,0 +1,91 @@
+:root {
+  font-size: 62.5%;
+
+  --white: hsl(0, 0%, 100%);
+  --white-200: hsl(100, 33%, 98%);
+
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(218, 16%, 24%);
+
+  --blue: hsl(216, 100%, 50%);
+  --blue-200: hsl(218, 100%, 38%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+
+body * {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+a:hover {
+  color: var(--blue-200);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 2.4rem;
+  background-color: var(--blue-200);
+
+  color: var(--white);
+}
+.link:hover,
+.link:focus {
+  background-color: var(--blue);
+  color: var(-white);
+}
+
+.container {
+  width: min(124rem, 100%);
+  margin-inline: auto;
+  padding-inline: 1.6rem;
+}
