@@ -1,5 +1,5 @@
 :root {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1.6rem = 16px
 
   --white: hsl(0, 0%, 100%);
   --white-200: hsl(100, 33%, 98%);
