@@ -32,7 +32,12 @@
   width: 100%;
 }
 
+/* ============================================================================ */
+/* =================================== HERO =================================== */
+/* ============================================================================ */
+
 .hero {
+  position: relative;
   background-color: var(--white);
 }
 
@@ -56,6 +61,13 @@
 
 .hero__text p {
   margin-block: 2rem 2.4rem;
+}
+
+.hero .icon-1 {
+  display: none;
+}
+.hero .icon-2 {
+  display: none;
 }
 
 /* ================================================================================== */
@@ -114,5 +126,35 @@
 
   .hero__img img {
     width: 100%;
+  }
+
+  .hero .icon-1 {
+    position: absolute;
+    z-index: 5;
+    top: -2rem;
+    right: 9rem;
+    display: block;
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+
+  .hero .icon-2 {
+    position: absolute;
+    z-index: 5;
+    bottom: 1rem;
+    right: 27rem;
+    display: block;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* ========== BANNER ========== */
+  .hero .icon-1 {
+    top: 0;
+    right: 38rem;
+  }
+
+  .hero .icon-2 {
+    bottom: 2rem;
+    right: 27rem;
   }
 }
