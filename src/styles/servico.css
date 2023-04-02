@@ -1,0 +1,170 @@
+/* ============================================================================== */
+/* =================================== BANNER =================================== */
+/* ============================================================================== */
+
+.banner {
+  padding-block: 15rem 8rem;
+  text-align: center;
+}
+
+.banner p {
+  max-width: 39rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* ============================================================================= */
+/* =================================== STEPS =================================== */
+/* ============================================================================= */
+
+.steps {
+  background-color: var(--white);
+  padding-block: 8rem;
+}
+
+.steps__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  transform: translateY(1rem);
+  animation: fadeIn 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.steps__single {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  align-items: center;
+  gap: 2rem;
+
+  width: min(55rem, 100%);
+}
+.steps__single + .steps__single::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -3.77rem;
+  left: 4rem;
+
+  width: 0.2rem;
+  height: 4.4rem;
+  background-color: var(--black);
+}
+
+.steps__single span {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8rem;
+  height: 8rem;
+  border: 0.2rem solid var(--black);
+  border-radius: 100%;
+  background-color: var(--white);
+  user-select: none;
+
+  font-size: 2rem;
+}
+
+.steps__single p {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+}
+
+/* ================================================================================ */
+/* =================================== BENEFITS =================================== */
+/* ================================================================================ */
+
+.benefits {
+  text-align: center;
+  padding-block: 8rem;
+}
+
+.benefits .container > p {
+  max-width: 50rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+
+.benefits__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 3.2rem;
+
+  margin-top: 4.8rem;
+}
+
+.benefits__single {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  max-width: 50rem;
+  background-color: var(--white);
+  padding: 2.4rem;
+  text-align: left;
+  border-radius: 0.4rem;
+
+  transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.benefits__single:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.8rem 1.6rem 0 #e6edf9;
+}
+
+.benedits__title {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  align-items: center;
+  justify-content: left;
+  gap: 1.6rem;
+}
+
+.benefits__single p {
+  font-size: 1.6rem;
+}
+
+/* ================================================================================== */
+/* =================================== RESPONSIVE =================================== */
+/* ================================================================================== */
+
+@media (max-width: 340px) {
+  .steps__single {
+    grid-template-columns: 4rem 1fr;
+    align-items: initial;
+  }
+
+  .steps__single span {
+    width: 4rem;
+    height: 4rem;
+
+    font-size: 1.6rem;
+  }
+
+  .steps__single::before {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .benefits__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
