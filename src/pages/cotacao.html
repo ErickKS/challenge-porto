@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../img/icons/logo.svg" />
+    <title>Cotação | Porto Seguro Bike</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/cotacao.css" />
+  </head>
+  <body>
+    <!-- SCRIPTS -->
+    <section class="register">
+      <div class="container">
+        <a href="../../index.html" class="logo">
+          <img src="../img/logo-porto.svg" alt="logo" />
+        </a>
+
+        <div class="steps">
+          <div class="steps-single active">
+            <span>1</span>
+          </div>
+          <div class="steps-single">
+            <span>2</span>
+          </div>
+          <div class="steps-single">
+            <span>3</span>
+          </div>
+          <div class="steps-single">
+            <span>4</span>
+          </div>
+        </div>
+
+        <div class="guide">
+          <h1>
+            Bem vindo à área de <br />
+            contratação do seguro!
+          </h1>
+          <p>Primeiramente, escolha qual o plano que mais te agrada.</p>
+        </div>
+
+        <div class="plan">
+          <label class="radio-wrapper">
+            <input type="radio" name="plan" id="plan1" value="plan1" checked />
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm36,96a40,40,0,1,0,40,40A40,40,0,0,0,200,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,200,200ZM56,136a40,40,0,1,0,40,40A40,40,0,0,0,56,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,56,200Zm136-80H152a8,8,0,0,1-5.66-2.34L120,91.31,99.31,112l34.35,34.34A8,8,0,0,1,136,152v48a8,8,0,0,1-16,0V155.31L82.34,117.66a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,0L155.31,104H192a8,8,0,0,1,0,16Z"
+              ></path>
+            </svg>
+            <span>Pedal Essencial</span>
+            <p>O plano gratuito você pode experimentar um dos serviços essenciais oferecidos.</p>
+          </label>
+          <label class="radio-wrapper">
+            <input type="radio" name="plan" id="plan2" value="plan2" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M216,96A88,88,0,1,0,72,163.83V240a8,8,0,0,0,11.58,7.16L128,225l44.43,22.21A8.07,8.07,0,0,0,176,248a8,8,0,0,0,8-8V163.83A87.85,87.85,0,0,0,216,96ZM56,96a72,72,0,1,1,72,72A72.08,72.08,0,0,1,56,96ZM168,227.06l-36.43-18.21a8,8,0,0,0-7.16,0L88,227.06V174.37a87.89,87.89,0,0,0,80,0ZM128,152A56,56,0,1,0,72,96,56.06,56.06,0,0,0,128,152Zm0-96A40,40,0,1,1,88,96,40,40,0,0,1,128,56Z"
+              ></path>
+            </svg>
+            <span>Pedal Leve</span>
+            <p>Para você que gosta de pedalar e está buscando um plano de serviços intermediário</p>
+          </label>
+          <label class="radio-wrapper">
+            <input type="radio" name="plan" id="plan3" value="plan3" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+              <path
+                d="M243.84,76.19a12.08,12.08,0,0,0-13.34-1.7l-50.21,25L138.37,29.86a12.11,12.11,0,0,0-20.74,0L75.71,99.52l-50.19-25A12.11,12.11,0,0,0,8.62,89.12l37,113.36a8,8,0,0,0,11.68,4.4C57.55,206.73,83.12,192,128,192s70.45,14.73,70.68,14.87a8,8,0,0,0,11.71-4.39l37-113.33A12.06,12.06,0,0,0,243.84,76.19ZM198,188.83C186,183.74,162.08,176,128,176s-58,7.74-70,12.83L26.71,93l45.07,22.47a12.17,12.17,0,0,0,15.78-4.59L128,43.66l40.44,67.2a12.17,12.17,0,0,0,15.77,4.59L229.29,93Z"
+              ></path>
+            </svg>
+            <span>Pedal Elite</span>
+            <p>Conte com diversos serviços capazes de elevar suas aventuras para o próximo nível.</p>
+          </label>
+        </div>
+        <a href="#">Não conhece os nossos planos? Veja aqui.</a>
+
+        <button class="next" onclick="alert('Área em construção!')">Próximo</button>
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

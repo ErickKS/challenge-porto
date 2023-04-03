@@ -1,0 +1,164 @@
+/* ================================================================================ */
+/* =================================== REGISTER =================================== */
+/* ================================================================================ */
+
+.register {
+  padding-top: 10rem;
+}
+
+.register .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register .logo {
+  width: 29rem;
+}
+
+.register .logo img {
+  width: 100%;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  gap: 4rem;
+
+  max-width: 28rem;
+  margin-top: 6.4rem;
+}
+
+.steps-single {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid var(--black);
+  border-radius: 100%;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.steps-single::after {
+  content: "";
+  position: absolute;
+  top: 1.8rem;
+  right: -4.2rem;
+
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--black);
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.steps-single:nth-of-type(4)::after {
+  display: none;
+}
+
+.steps-single.active {
+  border: 0.2rem solid var(--blue-200);
+}
+.steps-single.active,
+.steps-single.active::after {
+  background-color: var(--blue-200);
+}
+
+.steps-single span {
+  user-select: none;
+  font-size: 1.8rem;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.steps-single.active span {
+  color: var(--white);
+}
+
+.guide {
+  margin-top: 6.4rem;
+  text-align: center;
+}
+
+.guide h1 {
+  font-size: 4rem;
+  line-height: initial;
+}
+
+.guide p {
+  margin-top: 2rem;
+  max-width: 38.4rem;
+  margin-inline: auto;
+}
+
+.plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-top: 4.4rem;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  width: min(22rem, 100%);
+  padding: 2rem;
+  background-color: #e6edf9;
+  border: 0.2rem solid var(--blue-200);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.radio-wrapper input[type="radio"] {
+  appearance: none;
+  position: absolute;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+  background-image: radial-gradient(white 35%, black 40%);
+}
+
+.radio-wrapper:not(:has(:checked)) {
+  background-color: var(--white);
+  border: 0.2rem solid var(--black);
+}
+
+.radio-wrapper span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.radio-wrapper p {
+  font-size: 1.6rem;
+}
+
+.register a {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  color: var(--blue-200);
+}
+
+.next {
+  display: inline-block;
+
+  width: min(38.4rem, 100%);
+  padding: 1.6rem 2.4rem;
+  margin-top: 5.6rem;
+  background-color: var(--blue-200);
+  border: none;
+  border-radius: 0.4rem;
+  user-select: none;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.next:hover,
+.next:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
