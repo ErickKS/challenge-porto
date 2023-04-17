@@ -5,7 +5,7 @@
 <h3 align="center">
     <img src="./.github/print.png" alt="project print screen">
     <br>
-    <a href="https://erickks.github.io/sp1-porto-web/">live demo</a>
+    <a href="https://erickks.github.io/challenge-porto/">live demo</a>
 </h3>
 
 ## 📚 Project
